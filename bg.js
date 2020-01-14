@@ -1,12 +1,12 @@
 const body = document.querySelector("body");
 
-const IMG_NUMBER = 3;
+const IMG_NUMBER = 11;
 
 function paintImage(imgNumber) {
   const image = new Image();
   image.src = `images/${imgNumber + 1}.jpg`;
   image.classList.add("bgImage");
-  body.appendChild(image);
+  body.prepend(image);
 }
 
 function genRandom() {
